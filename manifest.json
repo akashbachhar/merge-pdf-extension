@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Merge PDF",
+  "version": "1.0",
+  "description": "Merge PDF files offline with drag-and-drop support",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["downloads"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [{
+    "resources": ["pdf-lib.min.js"],
+    "matches": ["<all_urls>"]
+  }]
+}

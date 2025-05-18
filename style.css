@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  width: 320px;
+  background-color: #fdfdfd;
+}
+
+.title {
+  text-align: center;
+  color: #e30000;
+  margin-bottom: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.custom-file-upload {
+  background-color: #e30000;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #b00000;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
+  background-color: #e30000;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b00000;
+}
+
+ul#fileList {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background-color: #f3f3f3;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: move;
+}
+
+.file-item:hover {
+  background-color: #e6e6e6;
+}
+
+.remove-btn {
+  color: #e30000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.progress {
+  font-weight: bold;
+  color: #e30000;
+}
+
+.drop-area {
+  border: 2px dashed #e30000;
+  padding: 20px;
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+  color: #e30000;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color: #fff6f6;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.preview-box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  position: relative;
+  background: #fafafa;
+  text-align: center;
+  font-size: 12px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: border 0.2s ease;
+}
+
+.preview-box.drag-over {
+  border: 2px dashed #e30000;
+}
+
+
+.remove-icon {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  color: #e30000;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.page-count {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 11px;
+  color: #555;
+}
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  opacity: 0.3;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+

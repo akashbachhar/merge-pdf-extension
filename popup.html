@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merge PDF</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2 class="title">Merge PDF</h2>
+
+  <div class="center">
+    <label class="custom-file-upload">
+      <input type="file" id="fileInput" multiple accept="application/pdf" />
+      Choose PDF Files
+    </label>
+  </div>
+
+  <div id="dropArea" class="drop-area">
+    or Drag & Drop PDFs here
+  </div>
+
+  <div id="previewGrid" class="grid-container"></div>
+
+  <div class="center">
+    <button id="mergeBtn" style="display: none;">Merge PDFs</button>
+    <div id="progress" class="progress" style="display:none;">🔄 Merging...</div>
+    <button id="saveBtn" style="display: none;">Save PDF</button>
+  </div>
+  <footer class="footer">
+    © <a href="https://akashbachhar.com" target="_blank">akashbachhar.com</a>
+  </footer>
+
+  <script src="pdf-lib.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
